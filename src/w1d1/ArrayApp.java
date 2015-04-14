@@ -1,6 +1,7 @@
-package chapter02;
+package w1d1;
 
-class ArrayApp
+
+public class ArrayApp
 {
 public static void main(String[] args)
    {
