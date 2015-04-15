@@ -1,4 +1,4 @@
-package w1d1;
+package w2d2;
 
 
 public class ArrayApp
