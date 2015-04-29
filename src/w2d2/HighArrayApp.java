@@ -72,6 +72,14 @@ public void display()             // displays array contents
       System.out.print(a[j] + " ");  // display it
    System.out.println("");
    }
+public String toString()
+{
+	String out = null;
+	 for(int j=0; j<nElems; j++) 
+	 
+		 out = out + a[j] + " ";
+	 return out;
+}
 //-----------------------------------------------------------
 public int size()
 {
@@ -103,7 +111,8 @@ public static void main(String[] args)
    arr.insert(33);
   
   // arr.insert(30);
-   arr.display();                // display items
+  // arr.display();                // display items
+   System.out.println(arr);
    System.out.println("Size of the array is :" + arr.size());
 
    int searchKey = 99;           // search for item
@@ -116,7 +125,7 @@ public static void main(String[] args)
    arr.delete(55);
    arr.delete(99);
 
-   arr.display();                // display items again
+  // arr.display();                // display items again
    System.out.println("Size of the array is :" + arr.size());
    }  // end main()
 }  // end class HighArrayApp
