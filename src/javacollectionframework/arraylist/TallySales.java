@@ -30,6 +30,7 @@ public class TallySales {
 		sales.add(new Sale("CD", 5.25));
 		Sale ob = sales.get(1); // Retrieve first index element from the list 
 		System.out.println(ob.item + " " + ob.price);
+		sales.remove(ob);
 		double total = 0;
 		for (Sale sale : sales) {
 		if (sale.item.equals("DVD")) {

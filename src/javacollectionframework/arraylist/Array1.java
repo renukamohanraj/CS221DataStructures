@@ -12,7 +12,7 @@ public class Array1 {
             // Demo code to sort the elements
 		public static void main(String[] args) {
 			ArrayList<String> stringArray = new ArrayList<String>(
-		    Arrays.asList("Hello", "Welcome", "Java", "Object", "Array", "String", "Inheritance"));
+		    Arrays.asList("Hello", "Welcome", "Java", "Object", "Array", "10", "Inheritance"));
 			System.out.println("****** Unsorted String Array *******");
 			//Sort array in ascending order
 			System.out.println(stringArray);
@@ -25,6 +25,7 @@ public class Array1 {
 			  Collections.sort(stringArray,Collections.reverseOrder());
 			   System.out.println("****** Reverse Sorted String Array *******");
 			   System.out.println(stringArray);
+			   //ArrayList<Integer> 
 			   	   
 			   
 			

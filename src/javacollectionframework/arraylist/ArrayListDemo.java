@@ -7,6 +7,7 @@ public class ArrayListDemo {
 
 		public static void main(String[] args) {
 			ArrayList<Integer> myInts = new ArrayList<Integer>(25);
+					
 			System.out.println( "Size of myInts = " + myInts.size());
 			for (int k = 0; k < 10; k++)
 				myInts.add( 3 * k );//Auto boxing
