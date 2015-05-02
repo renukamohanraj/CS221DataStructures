@@ -1,4 +1,4 @@
-package w1d3homeworksolution;
+package w1d4homeworksolution;
 
 public class Stack {
 	private int maxSize; // size of stack array
