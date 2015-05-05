@@ -1,4 +1,4 @@
-package w2d2;
+package w1d2;
 
 class Person1
    {

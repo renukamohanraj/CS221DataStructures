@@ -1,4 +1,4 @@
-package w2d2;
+package w1d2;
 
 public class TestLinearSearch {
 	 public static void main(String[] args) {

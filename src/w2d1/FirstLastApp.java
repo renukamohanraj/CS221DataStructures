@@ -1,6 +1,6 @@
 package w2d1;
 
-// Demo code for double ended queue
+// Demo code for double ended Linked List
 class Link1
 {
 public long dData;                 // data item
@@ -32,8 +32,10 @@ public void insertFirst(long dd)  // insert at front of list
    {
    Link1 newLink = new Link1(dd);   // make new link
 
-   if( isEmpty() )                // if empty list,
-      last = newLink;             // newLink <-- last
+   if(isEmpty())                // if empty list,
+      {
+	   last = newLink;             // newLink <-- last
+	   }
    newLink.next = first;          // newLink --> old first
    first = newLink;               // first --> newLink
    }

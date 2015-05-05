@@ -13,13 +13,13 @@ public class LinkList2App {
 
 		      theList.displayList();              // display list
 
-		      Link f = theList.find(44);          // find item
+		      Link f = theList.find(55);          // find item
 		      if( f != null)
 		         System.out.println("Found link with key " + f.iData);
 		      else
 		         System.out.println("Can't find link");
 
-		      Link d = theList.delete(66);        // delete item
+		      Link d = theList.delete(88);        // delete item
 		      if( d != null )
 		         System.out.println("Deleted link with key " + d.iData);
 		      else

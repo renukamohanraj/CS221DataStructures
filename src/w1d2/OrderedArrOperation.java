@@ -1,4 +1,4 @@
-package w2d2;
+package w1d2;
 class OrdArray
 {
 private long[] a; // ref to array a
