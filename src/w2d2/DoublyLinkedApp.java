@@ -101,16 +101,19 @@ class DoublyLinkedList {
 
 		if (current == last) // if last link,
 		{
-			newLink.next = null; // newLink --> null
-			last = newLink; // newLink <-- last
-		} else // not last link,
+			last = newLink;
+			newLink.previous = current;
+			current.next = newLink;
+			
+			 // newLink <-- last
+		} 
+		else // not last link,
 		{
-			newLink.next = current.next; // newLink --> old next
-											// newLink <-- old next
-			current.next.previous = newLink;
+			newLink.next = current.next;
+			current.next.previous = newLink; // old current <-- newLink
+			newLink.previous = current;			
+			current.next = newLink; 
 		}
-		newLink.previous = current; // old current <-- newLink
-		current.next = newLink; // old current --> newLink
 		return true; // found it, did insertion
 	}
 
@@ -174,13 +177,13 @@ public class DoublyLinkedApp {
 		DoublyLinkedList theList = new DoublyLinkedList();
 
 		theList.insertFirst(22); // insert at front
-		theList.insertFirst(44);
-		theList.insertFirst(66);
-
+		theList.insertAfter(22,77);
+		
 		theList.insertLast(11); // insert at rear
 		theList.insertLast(33);
 		theList.insertLast(55);
-
+		theList.insertAfter(55, 88); 
+		theList.insertAfter(33, 44);
 		theList.displayForward(); // display list forward
 		theList.displayBackward(); // display list backward
 
@@ -189,9 +192,8 @@ public class DoublyLinkedApp {
 		theList.deleteKey(11); // delete item with key 11
 
 		theList.displayForward(); // display list forward
-
-		theList.insertAfter(22, 77); // insert 77 after 22
-		theList.insertAfter(33, 88); // insert 88 after 33
+		
+		//theList.insertAfter(33, 88); // insert 88 after 33
 
 		theList.displayForward(); // display list forward
 	} // end main()
