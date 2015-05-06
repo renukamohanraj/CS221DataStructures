@@ -16,7 +16,7 @@ public class Array1 {
 			System.out.println("****** Unsorted String Array *******");
 			//Sort array in ascending order
 			System.out.println(stringArray);
-			
+					
 			System.out.println("****** Sorted String Array *******");
 			Collections.sort(stringArray);
 			System.out.println(stringArray);
