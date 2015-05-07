@@ -10,7 +10,7 @@ import java.util.LinkedList;
 public class TestIterator {
 	public static void main(String[] args) {
 		// Iterator for ArrayList
-		 List<String> port = new ArrayList<String>();
+		 ArrayList<String> port = new ArrayList<String>();
 		 Collections.addAll(port, "AO", "BR", "CV", "GW", "MO", "MZ", "PT");
 		 System.out.println(port);
 		 Iterator it1 = port.iterator();
@@ -32,7 +32,7 @@ public class TestIterator {
 		 ArrayList<String> country = new ArrayList<String>();
 		 country.add("India");
 		 country.add("Canada");
-		 country.add("Africa");
+		 country.add("South Africa");
 		 country.add("Austraslia");
 		 System.out.println("Countries : ");
 		 for(Iterator it = country.iterator();it.hasNext();)
