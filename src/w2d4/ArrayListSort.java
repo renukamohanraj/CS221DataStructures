@@ -35,12 +35,13 @@ class Employe {
 		}
 	};
 	
+	// Reverse order by age
 	public static final Comparator AGE = new Comparator(){
 		public int compare(Object o1, Object o2){
 				
 			Integer age1 = new Integer(((Employe)o1).getAge()) ;
 			Integer age2 = new Integer(((Employe)o2).getAge());
-			return age1.compareTo(age2);
+			return age2.compareTo(age1);
 		}
 	};
 		
@@ -76,7 +77,7 @@ public class ArrayListSort {
 			
 			Collections.sort(list, Employe.AGE);
 			
-			System.out.println("After sort by Age: ");
+			System.out.println("After reverse sort by Age: ");
 			for(int i=0; i<list.size(); i++){
 				Employe e = (Employe)list.get(i);
 				System.out.println(e.getAge());

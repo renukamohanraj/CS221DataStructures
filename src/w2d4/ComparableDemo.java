@@ -25,14 +25,15 @@ class Elephant implements Comparable
 			else 
 				return 0;
 	}
+
 	// Sort by Reverse order
 	/*public int compareTo(Object obj)
 	{
 		Elephant AObj = (Elephant)obj;
 		return Integer.compare( AObj.age,this.age);
+		
 	}*/
-	//return Integer.compare(item.value, this.value);
-}
+  }
 
 public class ComparableDemo {
 	
