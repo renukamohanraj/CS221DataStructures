@@ -26,7 +26,7 @@ class Employe {
 	}
 	
 	// Implementing Anonymous Interface
-	public static final Comparator NAME = new Comparator(){
+	public static Comparator NAME = new Comparator(){
 		public int compare(Object o1, Object o2) {
 			
 			String name1 = ((Employe)o1).getName();
@@ -36,7 +36,7 @@ class Employe {
 	};
 	
 	// Reverse order by age
-	public static final Comparator AGE = new Comparator(){
+	public static Comparator AGE = new Comparator(){
 		public int compare(Object o1, Object o2){
 				
 			Integer age1 = new Integer(((Employe)o1).getAge()) ;

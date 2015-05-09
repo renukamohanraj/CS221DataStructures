@@ -14,7 +14,7 @@ class Elephant implements Comparable
 		this.age = age;
 	}
 	// Sort by Ascending order
-	public int compareTo(Object obj)
+	/*public int compareTo(Object obj)
 	{
 		Elephant AObj = (Elephant)obj;
 		if (this.age > AObj.age) 
@@ -24,15 +24,15 @@ class Elephant implements Comparable
 				return -1;
 			else 
 				return 0;
-	}
+	}*/
 
 	// Sort by Reverse order
-	/*public int compareTo(Object obj)
+	public int compareTo(Object obj)
 	{
 		Elephant AObj = (Elephant)obj;
-		return Integer.compare( AObj.age,this.age);
+		return Integer.compare(this.age,AObj.age);
 		
-	}*/
+	}
   }
 
 public class ComparableDemo {
@@ -42,6 +42,13 @@ public class ComparableDemo {
 		list.add(new Elephant(156.90f, 20));
 		list.add(new Elephant(166.90f, 15));
 		list.add(new Elephant(146.90f, 18));
+		
+		ArrayList<Integer> b = new ArrayList<Integer>();
+		b.add(10);
+		b.add(-5);
+		b.add(1);
+		b.add(15);
+		Collections.sort(b);
 		
 		// Sort for ArrayList Elephant objects
 		Collections.sort(list);

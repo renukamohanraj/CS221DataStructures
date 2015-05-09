@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-class Sale implements Comparable {
+class Sale implements Comparable 
+{
 	int sid;
 	String item;
 	double price;
