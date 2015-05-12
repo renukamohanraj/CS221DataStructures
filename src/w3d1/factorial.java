@@ -9,7 +9,7 @@ public class factorial {
 		int n = in.nextInt();
 		    	
         
-		System.out.println("Factorial = " + fact(4));
+		System.out.println("Factorial = " + fact(n));
 		
 	}
 	static int fact(int num) {
